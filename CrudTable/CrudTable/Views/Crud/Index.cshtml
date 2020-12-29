@@ -1,0 +1,58 @@
+﻿@using CrudTable.Db_context;
+
+@model List<Product>
+
+@{
+    ViewBag.Title = "CrudTable";
+}
+
+<h2>CrudTable</h2>
+
+
+
+<div>
+    <div class="addproductbtn">
+        @*<button type="button" onclick="location.href='@Url.Action("AddProduct","Crud")'">+ Add Product </button>*@
+        <p>+</p> <a href="/Crud/AddProduct"> Add Product</a>
+
+    </div>
+    <div>
+        <h5>Product Name</h5>
+        <input type="text" class="search" />
+
+    </div>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Description</th>
+                <th>Price</th>
+                <th class="col-sm-2">Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+
+            @foreach (var product in Model)
+            {
+                <tr>
+                    <td class="namerow">@product.Name</td>
+                    <td>@product.Description</td>
+                    <td>@product.Price‎ €</td>
+                    <td class="actions">
+                        @Html.ActionLink("Edit", "EditProduct", new { id = product.Id }, new { @class = "edit" })
+
+                        @Html.ActionLink("Delete", "DeleteProduct", new { id = product.Id }, new { @class = "delete", onclick = "return confirm('Are you sure you want to delete? This action cannot be undone.');" })
+                    </td>
+                </tr>
+
+            }
+
+        </tbody>
+    </table>
+
+
+</div>
+
+   
+

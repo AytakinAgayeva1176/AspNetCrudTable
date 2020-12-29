@@ -1,0 +1,146 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+select,
+textarea {
+    max-width: 280px;
+}
+
+h5 {
+    font-weight: bold;
+}
+
+.addproductbtn {
+    width: 140px;
+    height: 40px;
+    background-image: linear-gradient(to bottom,#fff 0,#e0e0e0 100%);
+    border-radius: 4px;
+    border: 0.5px solid #333333;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    margin: 30px 0;
+}
+
+    .addproductbtn a {
+        color: #333333;
+        font-size: 14px;
+        text-decoration: none;
+    }
+
+    .addproductbtn p {
+        color: #333333;
+        font-weight: bold;
+        font-size: 28px;
+        margin: 0 10px 0 0;
+    }
+
+   .cominput{
+    width: 100%;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+   }
+
+.search {
+    width: 300px;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.desc{
+    height: 200px;
+}
+.form {
+    width: 500px;
+}
+
+.formcontent{
+    display: flex;
+    flex-direction:column;
+}
+
+
+
+input:focus {
+    outline: none !important;
+    border-color: #66AFE9;
+    box-shadow: 0px 0px 10px -2px #719ECE;
+}
+
+   .namerow {
+    color: #4A89BF;
+
+   }
+
+   .edit {
+    background-color: #EC9720;
+    width: 50px;
+    height: 34px;
+    border-radius: 4px;
+    padding: 6px 10px;
+    color: white;
+    text-decoration: none;
+   }
+    .edit:hover {
+        text-decoration: none;
+        color: white;
+    }
+
+   .delete {
+    background-color: #d14743;
+    width: 50px;
+    height: 34px;
+    border-radius: 4px;
+    padding: 6px 10px;
+    color: white ;
+    text-decoration: none;
+   }
+
+    .delete:hover {
+        text-decoration: none;
+        color: white;
+    }
+
+.savebutton{
+    background-image: linear-gradient(to bottom,#337ab7 0,#265a88 100%) !important;
+    border-color: #245580 !important;
+    color: white !important;
+    border-radius: 4px !important;
+    padding: 1px 6px !important;
+}
+
+.Cancel {
+    border-radius: 4px;
+}

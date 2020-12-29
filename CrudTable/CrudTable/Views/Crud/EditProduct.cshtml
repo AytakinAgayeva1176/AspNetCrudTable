@@ -1,0 +1,27 @@
+﻿@model CrudTable.Db_context.Product
+@{
+    ViewBag.Title = "EditProduct";
+}
+
+<h2>Edit Product</h2>
+
+<div>
+    <form action="/Crud/EditProduct" method="post" class="form">
+
+        <input type="hidden" name="Id" value="@Model.Id" />
+        <label class="d-block">Name:</label>
+        <input type="text" name="name" class="cominput d-block" value="@Model.Name" />
+        <br />
+        <br />
+        <label>Description:</label>
+        <input type="text" name="description" class="cominput desc" value="@Model.Description" />
+        <br />
+        <br />
+        <label>Price:</label>
+        <input type="number" name="price" class="cominput" value="@Model.Price" />
+        <br />
+        <br />
+        <input type="submit"  value="Save" class="savebutton" />
+        <button type="button" class="Cancel" onclick="location.href='@Url.Action("Index","Crud")'">Cancel</button>
+    </form>
+</div>

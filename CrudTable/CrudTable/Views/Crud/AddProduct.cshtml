@@ -1,0 +1,26 @@
+﻿
+@{
+    ViewBag.Title = "AddProduct";
+}
+
+<h2>Add New Product</h2>
+
+<div >
+    <form action="/Crud/AddProduct" method="post" class="form">
+
+        <label>Name:</label>
+        <input type="text" name="name" class="cominput" />
+        <br />
+        <br />
+        <label>Description:</label>
+        <input type="text" name="description" class="cominput desc" />
+        <br />
+        <br />
+        <label>Price:</label>
+        <input type="number" name="price" class="cominput" />
+        <br />
+        <br />
+        <input type="submit" value="Create" class="savebutton" />
+        <button type="button"  class="Cancel" onclick="location.href='@Url.Action("Index","Crud")'">Cancel</button>
+    </form>
+</div>
